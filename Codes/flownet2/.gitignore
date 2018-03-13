@@ -1,0 +1,9 @@
+__pycache__/
+*.py[cod]
+*$py.class
+*.o
+*.so
+*.so.dSYM
+checkpoints/
+!checkpoints/download.sh
+!checkpoints/README.md
