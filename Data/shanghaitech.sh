@@ -8,7 +8,7 @@ rm shanghaitech.tar.gz
 
 echo "download ShanghaiTech-Campus successfully..."
 
-ehco "If encounters any ERRORS(I guess the download link in shell script is not permanent),
+echo "If encounters any ERRORS(I guess the download link in shell script is not permanent),
 please manually download shanghaitech.tar.gz from https://onedrive.live.com/?authkey=%21AMqh2fTSemfrokE&id=3705E349C336415F%215109&cid=3705E349C336415F
 and run the following commands:
 
