@@ -38,12 +38,18 @@ cd Data
 ./shanghaitech.sh
 ```
 
+If the download shell does not work (I guess the download link in shell script is not permanent), please manually download all datasets from [ped1.tar.gz, ped2.tar.gz, avenue.tar.gz and shanghaitech.tar.gz](https://onedrive.live.com/?authkey=%21AMqh2fTSemfrokE&id=3705E349C336415F%215109&cid=3705E349C336415F)
+and tar each tar.gz file, and move them in to **Data** folder.
+
 ## 3. Testing on saved models
 * Download the trained models (There are the pretrained FlowNet and the trained models of the papers, such as ped1, ped2 and avenue).
 ```shell
 cd checkpoints
 ./download_pretrains.sh
 ```
+If the download shell does not work (I guess the download link in shell script is not permanent), please manually download pretrained models from [pretrains.tar.gz](https://onedrive.live.com/?authkey=%21AMqh2fTSemfrokE&id=3705E349C336415F%215109&cid=3705E349C336415F)
+and tar -xvf pretrains.tar.gz, and move pretrains into **Codes/checkpoints** folder.
+
 * Running the sript (as ped2 and avenue datasets for examples) and cd into **Codes** folder at first.
 ```shell
 python inference.py  --dataset  ped2    \
