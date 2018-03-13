@@ -23,6 +23,7 @@ pip install -r requirements.txt
 ```code
 CUDA 8.0
 Cudnn 6.0
+Ubuntu 14.04 or 16.04, Centos 7 and other distributions.
 ```
 ## 2. Download datasets
 cd into Data folder of project and run the shell scripts (**ped1.sh, ped2.sh, avenue.sh, shanghaitech.sh**) under the Data folder.

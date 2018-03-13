@@ -7,5 +7,3 @@ tar -xvf ped1.tar.gz
 rm ped1.tar.gz
 
 echo "Download UCSD-Ped1 successfully..."
-
-
