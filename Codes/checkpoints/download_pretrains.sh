@@ -7,5 +7,3 @@ tar -xvf pretrains.tar.gz
 rm pretrains.tar.gz
 
 echo "Download pretrains successfully..."
-
-

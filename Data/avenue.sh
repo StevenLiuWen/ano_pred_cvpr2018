@@ -7,5 +7,3 @@ tar -xvf avenue.tar.gz
 rm avenue.tar.gz
 
 echo "Download CUHK-Avenue successfully..."
-
-
