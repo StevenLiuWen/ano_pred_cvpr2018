@@ -36,7 +36,7 @@ cd Data
 ```
 
 ## 3. Testing on saved models
-* Download the trained models (it contains the pretrained FlowNet and the trained models of papers, such as ped1, ped2 and avenue).
+* Download the trained models (There are the pretrained FlowNet and the trained models of the papers, such as ped1, ped2 and avenue).
 ```shell
 cd checkpoints
 ./download_pretrains.sh
