@@ -2,7 +2,7 @@ numpy==1.14.1
 scipy==1.0.0
 matplotlib==2.1.2
 tensorflow==1.4.1
-tensorflow_gpu==1.4.1
+tensorflow-gpu==1.4.1
 Pillow==5.0.0
 pypng==0.0.18
 scikit_learn==0.19.1

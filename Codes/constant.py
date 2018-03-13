@@ -92,7 +92,7 @@ const.EVALUATE = args.evaluate
 # network constants
 const.HEIGHT = 256
 const.WIDTH = 256
-const.FLOWNET_CHECKPOINT = 'models/pretrains/flownet-SD.ckpt-0'
+const.FLOWNET_CHECKPOINT = 'checkpoints/pretrains/flownet-SD.ckpt-0'
 const.FLOW_HEIGHT = 384
 const.FLOW_WIDTH = 512
 
@@ -136,9 +136,9 @@ if args.snapshot_dir:
         const.SNAPSHOT_DIR = args.snapshot_dir
         print(const.SNAPSHOT_DIR)
     else:
-        const.SNAPSHOT_DIR = get_dir(os.path.join('models', const.SAVE_DIR + '_' + args.snapshot_dir))
+        const.SNAPSHOT_DIR = get_dir(os.path.join('checkpoints', const.SAVE_DIR + '_' + args.snapshot_dir))
 else:
-    const.SNAPSHOT_DIR = get_dir(os.path.join('models', const.SAVE_DIR))
+    const.SNAPSHOT_DIR = get_dir(os.path.join('checkpoints', const.SAVE_DIR))
 
 if args.summary_dir:
     const.SUMMARY_DIR = get_dir(os.path.join('summary', const.SAVE_DIR + '_' + args.summary_dir))

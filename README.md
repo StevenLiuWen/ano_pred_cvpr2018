@@ -1,5 +1,5 @@
 # Future Frame Prediction for Anomaly Detection -- A New Baseline
-This repo is the official open source of [Future Frame Prediction for Anomaly Detection -- A New Baseline, CVPR 2018](https://arxiv.org/pdf/1712.09867.pdf) by Wen Liu, Weixinluo, Dongze Lian and Shenghua Gao. 
+This repo is the official open source of [Future Frame Prediction for Anomaly Detection -- A New Baseline, CVPR 2018](https://arxiv.org/pdf/1712.09867.pdf) by Wen Liu, Weixin Lluo, Dongze Lian and Shenghua Gao. 
 A **demo** is shown in *https://www.youtube.com/watch?v=M--wv-Y_h0A*. It is implemented in tensorflow. Please follow the instructions to run the code.
 
 ## 1. Installation (Anaconda with python3.6 installation is recommended)
@@ -8,7 +8,7 @@ A **demo** is shown in *https://www.youtube.com/watch?v=M--wv-Y_h0A*. It is impl
 numpy==1.14.1
 scipy==1.0.0
 matplotlib==2.1.2
-tensorflow_gpu==1.4.1
+tensorflow-gpu==1.4.1
 tensorflow==1.4.1
 Pillow==5.0.0
 pypng==0.0.18
@@ -37,7 +37,7 @@ cd Data
 ## 3. Testing on saved models
 * Download the trained models
 ```shell
-cd models
+cd checkpoints
 ./download_pretrains.sh
 ```
 * Running the sript (as ped2 and avenue datasets for examples) and cd into **Codes** folder at first.
@@ -45,14 +45,14 @@ cd models
 python inference.py  --dataset  ped2    \
                     --test_folder  ../Data/ped2/testing/frames      \
                     --gpu  1    \
-                    --snapshot_dir    models/pretrains/ped2
+                    --snapshot_dir    checkpoints/pretrains/ped2
 ```
 
 ```shell
 python inference.py  --dataset  avenue    \
                     --test_folder  ../Data/avenue/testing/frames      \
                     --gpu  1    \
-                    --snapshot_dir    models/pretrains/avenue
+                    --snapshot_dir    checkpoints/pretrains/avenue
 ```
 
 
@@ -111,8 +111,8 @@ Open the browser and type **https://ip:10086**. Following is the screen shot of 
 ![scalars_tensorboard](assets/scalars.JPG)
 
 ![images_tensorboard](assets/images.JPG)
-Since all frames are loaded into BGR channels in training and testing, the visualized images look different from RGB channels.
-
+Since the models are trained in BGR image color channels, the visualized images in tensorboard look different from RGB channels.
+In the demo, we change the output images from BGR to RGB.
 
 ## Notes
 The flow loss (temporal loss) module is based on [a TensorFlow implementation of FlowNet2](https://github.com/sampepose/flownet2-tf). Thanks for their nice work.
