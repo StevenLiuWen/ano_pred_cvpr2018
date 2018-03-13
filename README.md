@@ -2,7 +2,7 @@
 This repo is the official open source of [Future Frame Prediction for Anomaly Detection -- A New Baseline, CVPR 2018](https://arxiv.org/pdf/1712.09867.pdf) by Wen Liu, Weixinluo, Dongze Lian and Shenghua Gao. 
 A **demo** is shown in *https://www.youtube.com/watch?v=M--wv-Y_h0A*. It is implemented in tensorflow. Please follow the instructions to run the code.
 
-####1. Installation (Anaconda with python3.6 installation is recommended)
+#### 1. Installation (Anaconda with python3.6 installation is recommended)
 * Install 3rd-package dependencies of python (listed in requirements.txt)
 ```
 numpy==1.14.1
@@ -24,7 +24,7 @@ pip install -r requirements.txt
 CUDA 8.0
 Cudnn 6.0
 ```
-####2. Download datasets
+#### 2. Download datasets
 cd into Data folder of project and run the shell scripts (**ped1.sh, ped2.sh, avenue.sh, shanghaitech.sh**) under the Data folder.
 ```shell
 cd Data
@@ -34,7 +34,7 @@ cd Data
 ./shanghaitech.sh
 ```
 
-####3. Testing on saved models
+#### 3. Testing on saved models
 * Download the trained models
 ```shell
 cd models
@@ -56,7 +56,7 @@ python inference.py  --dataset  avenue    \
 ```
 
 
-####4. Training from scratch (here we use ped2 and avenue datasets for examples)
+#### 4. Training from scratch (here we use ped2 and avenue datasets for examples)
 * Set hyper-parameters
 The default hyper-parameters, such as $\lambda_{init}$, $\lambda_{gd}$, $\lambda_{op}$, $\lambda_{adv}$ and the learning rate of G, as well as D, are all initialized in **training_hyper_params/hyper_params.ini**. 
 * Running script (as ped2 or avenue for instances) and cd into **Codes** folder at first.
