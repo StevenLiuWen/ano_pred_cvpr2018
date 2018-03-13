@@ -1,6 +1,9 @@
 # Future Frame Prediction for Anomaly Detection -- A New Baseline
 This repo is the official open source of [Future Frame Prediction for Anomaly Detection -- A New Baseline, CVPR 2018](https://arxiv.org/pdf/1712.09867.pdf) by Wen Liu, Weixin Lluo, Dongze Lian and Shenghua Gao. 
-A **demo** is shown in *https://www.youtube.com/watch?v=M--wv-Y_h0A*. It is implemented in tensorflow. Please follow the instructions to run the code.
+A **demo** is shown in *https://www.youtube.com/watch?v=M--wv-Y_h0A*. 
+![scalars_tensorboard](assets/architecture.JPG)
+
+It is implemented in tensorflow. Please follow the instructions to run the code.
 
 ## 1. Installation (Anaconda with python3.6 installation is recommended)
 * Install 3rd-package dependencies of python (listed in requirements.txt)
