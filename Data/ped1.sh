@@ -2,7 +2,7 @@
 
 echo "Downloading UCSD-Ped1 dataset....."
 
-wget "https://ofhz9a.bn.files.1drv.com/y4m5ZrdN62Hy303ATx2p6Cogia4Ewpwnye8HgJ7qgWdFJ6gaNKGErugal2lfpdr2h65rjArbhrID9mxfSIf2WfXvh9AJf40xwcEWxEAuTp_-gSkfyLAt4Ef7xkJko4InRzUJz-3bdvV77dmBuYSl9LljLyP6908E4EyvPEkMI3pHrNP5QmiJSsHN6jFwtOHpZuUG8UeJGpqb-TwKjNxFrEpjQ/ped1.tar.gz"
+wget "https://ofhz9a.bn.files.1drv.com/y4mYp-s_RSs8flFeaThqT-Zwa_mSIgALD0g5M_ioQF20lFFnLYjYD8aaPR7pqVav4U_xxvRxMERy4Z0o_Fw0T8ysEHGwmaKuz135ajAwofSunZZpNV4e2E_IHW3mXwEy8-NMK7OF9U-Ntm1Pe9bxG-OH9acwL9Qg7EMa4vx-yGF_JRU3pTg-BPkIpuQaV8jhyAldwniIn-F1dGbiTLw08RZPg/ped1.tar.gz"
 tar -xvf ped1.tar.gz
 rm ped1.tar.gz
 
