@@ -9,18 +9,18 @@ import socket
 
 
 # data folder contain all datasets, such as ped1, ped2, avenue, shanghaitech, etc
-# DATA_DIR = '../Data'
-hostname = socket.gethostname()
-if hostname == 'dl-T8520-G10':  # 119
-    DATA_DIR = '/home/liuwen/ssd/datasets'
-elif hostname == 'admin' or hostname == 'compute101' or hostname == 'compute113' or hostname == 'compute106' \
-        or hostname == 'compute107' or hostname == 'compute114':   # node02
-    DATA_DIR = '/home/luowx/liuwen/datasets'
-elif hostname == 'gpu13' or 'gpu14':
-    DATA_DIR = '/public/home/gaoshenghua/liuwen/datasets'
-else:
-    # raise NotImplementedError('Not found this machine {}!'.format(hostname))
-    DATA_DIR = '../Data'
+DATA_DIR = '../Data'
+# hostname = socket.gethostname()
+# if hostname == 'dl-T8520-G10':  # 119
+#     DATA_DIR = '/home/liuwen/ssd/datasets'
+# elif hostname == 'admin' or hostname == 'compute101' or hostname == 'compute113' or hostname == 'compute106' \
+#         or hostname == 'compute107' or hostname == 'compute114':   # node02
+#     DATA_DIR = '/home/luowx/liuwen/datasets'
+# elif hostname == 'gpu13' or 'gpu14':
+#     DATA_DIR = '/public/home/gaoshenghua/liuwen/datasets'
+# else:
+#     # raise NotImplementedError('Not found this machine {}!'.format(hostname))
+#     DATA_DIR = '../Data'
 
 
 # normalize scores in each sub video
