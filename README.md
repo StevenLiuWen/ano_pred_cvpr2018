@@ -21,6 +21,8 @@ opencv-python==3.2.0.6
 
 ```shell
 pip install -r requirements.txt
+
+pip install tensorflow-gpu==1.4.1
 ```
 * Other libraries
 ```code
