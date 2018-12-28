@@ -49,10 +49,8 @@ and tar each tar.gz file, and move them in to **Data** folder.
 cd checkpoints
 ./download_pretrains.sh
 ```
-If the download shell does not work (I guess the download link in shell script is not permanent), please manually download pretrained models from [pretrains.tar.gz](https://onedrive.live.com/?authkey=%21AMqh2fTSemfrokE&id=3705E349C336415F%215109&cid=3705E349C336415F)
-and tar -xvf pretrains.tar.gz, and move pretrains into **Codes/checkpoints** folder.
-
-Download **[ShanghaiTech pre-trained models](https://onedrive.live.com/?authkey=%21AMlRwbaoQ0sAgqU&id=303FB25922AAD438%217383&cid=303FB25922AAD438)**
+If the download shell does not work (I guess the download link in shell script is not permanent), please manually download pretrained models from [pretrains.tar.gz, avenue, ped1, ped2, flownet](https://onedrive.live.com/?authkey=%21AMqh2fTSemfrokE&id=3705E349C336415F%215109&cid=3705E349C336415F)
+and tar -xvf pretrains.tar.gz, and move pretrains into **Codes/checkpoints** folder. **[ShanghaiTech pre-trained models](https://onedrive.live.com/?authkey=%21AMlRwbaoQ0sAgqU&id=303FB25922AAD438%217383&cid=303FB25922AAD438)**
 
 * Running the sript (as ped2 and avenue datasets for examples) and cd into **Codes** folder at first.
 ```shell
