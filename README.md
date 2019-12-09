@@ -1,5 +1,5 @@
 # Future Frame Prediction for Anomaly Detection -- A New Baseline
-This repo is the official open source of [Future Frame Prediction for Anomaly Detection -- A New Baseline, CVPR 2018](https://arxiv.org/pdf/1712.09867.pdf) by Wen Liu, Weixin Lluo, Dongze Lian and Shenghua Gao. 
+This repo is the official open source of [Future Frame Prediction for Anomaly Detection -- A New Baseline, CVPR 2018](https://arxiv.org/pdf/1712.09867.pdf) by Wen Liu, Weixin Luo, Dongze Lian and Shenghua Gao. 
 A **demo** is shown in *https://www.youtube.com/watch?v=M--wv-Y_h0A*. 
 ![scalars_tensorboard](assets/architecture.JPG)
 
