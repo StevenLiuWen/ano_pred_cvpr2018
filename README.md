@@ -1,5 +1,5 @@
 # Future Frame Prediction for Anomaly Detection -- A New Baseline
-This repo is the official open source of [Future Frame Prediction for Anomaly Detection -- A New Baseline, CVPR 2018](https://arxiv.org/pdf/1712.09867.pdf) by Wen Liu, Weixin Lluo, Dongze Lian and Shenghua Gao. 
+This repo is the official open source of [Future Frame Prediction for Anomaly Detection -- A New Baseline, CVPR 2018](https://arxiv.org/pdf/1712.09867.pdf) by Wen Liu, Weixin Luo, Dongze Lian and Shenghua Gao. 
 A **demo** is shown in *https://www.youtube.com/watch?v=M--wv-Y_h0A*. 
 ![scalars_tensorboard](assets/architecture.JPG)
 
@@ -21,6 +21,8 @@ opencv-python==3.2.0.6
 
 ```shell
 pip install -r requirements.txt
+
+pip install tensorflow-gpu==1.4.1
 ```
 * Other libraries
 ```code
@@ -30,25 +32,15 @@ Ubuntu 14.04 or 16.04, Centos 7 and other distributions.
 ```
 ## 2. Download datasets
 cd into Data folder of project and run the shell scripts (**ped1.sh, ped2.sh, avenue.sh, shanghaitech.sh**) under the Data folder.
-```shell
-cd Data
-./ped2.sh
-./ped1.sh
-./avenue.sh
-./shanghaitech.sh
-```
-
-If the download shell does not work (I guess the download link in shell script is not permanent), please manually download all datasets from [ped1.tar.gz, ped2.tar.gz, avenue.tar.gz and shanghaitech.tar.gz](http://101.32.75.151:8181/dataset)
+Please manually download all datasets from [ped1.tar.gz, ped2.tar.gz, avenue.tar.gz and shanghaitech.tar.gz](https://onedrive.live.com/?authkey=%21AMqh2fTSemfrokE&id=3705E349C336415F%215109&cid=3705E349C336415F)
 and tar each tar.gz file, and move them in to **Data** folder.
+
+You can also download data from BaiduYun(https://pan.baidu.com/s/1j0TEt-2Dw3kcfdX-LCF0YQ) i9b3 
 
 ## 3. Testing on saved models
 * Download the trained models (There are the pretrained FlowNet and the trained models of the papers, such as ped1, ped2 and avenue).
-```shell
-cd checkpoints
-./download_pretrains.sh
-```
-If the download shell does not work (I guess the download link in shell script is not permanent), please manually download pretrained models from [pretrains.tar.gz](http://101.32.75.151:8181/dataset/pretrains.tar.gz)
-and tar -xvf pretrains.tar.gz, and move pretrains into **Codes/checkpoints** folder.
+Please manually download pretrained models from [pretrains.tar.gz, avenue, ped1, ped2, flownet](https://onedrive.live.com/?authkey=%21AMqh2fTSemfrokE&id=3705E349C336415F%215109&cid=3705E349C336415F)
+and tar -xvf pretrains.tar.gz, and move pretrains into **Codes/checkpoints** folder. **[ShanghaiTech pre-trained models](https://onedrive.live.com/?authkey=%21AMlRwbaoQ0sAgqU&id=303FB25922AAD438%217383&cid=303FB25922AAD438)**
 
 * Running the sript (as ped2 and avenue datasets for examples) and cd into **Codes** folder at first.
 ```shell
