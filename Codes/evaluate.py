@@ -5,7 +5,6 @@ import argparse
 import pickle
 from sklearn import metrics
 import json
-import socket
 
 
 # data folder contain all datasets, such as ped1, ped2, avenue, shanghaitech, etc
@@ -29,6 +28,11 @@ NORMALIZE = True
 # number of history frames, since in prediction based method, the first 4 frames can not be predicted, so that
 # the first 4frames are undecidable, we just ignore the first 4 frames
 DECIDABLE_IDX = 4
+
+
+def set_data_dir(data_dir):
+    global DATA_DIR
+    DATA_DIR = data_dir
 
 
 def parser_args():

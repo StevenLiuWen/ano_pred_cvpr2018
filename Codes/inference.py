@@ -25,7 +25,8 @@ height, width = 256, 256
 snapshot_dir = const.SNAPSHOT_DIR
 psnr_dir = const.PSNR_DIR
 evaluate_name = const.EVALUATE
-
+evaluate.set_data_dir("/p300/datasets")
+print(evaluate.DATA_DIR)
 print(const)
 
 
