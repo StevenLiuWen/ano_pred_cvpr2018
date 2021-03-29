@@ -32,14 +32,14 @@ Ubuntu 14.04 or 16.04, Centos 7 and other distributions.
 ```
 ## 2. Download datasets
 cd into Data folder of project and run the shell scripts (**ped1.sh, ped2.sh, avenue.sh, shanghaitech.sh**) under the Data folder.
-Please manually download all datasets from [ped1.tar.gz, ped2.tar.gz, avenue.tar.gz and shanghaitech.tar.gz](https://onedrive.live.com/?authkey=%21AMqh2fTSemfrokE&id=3705E349C336415F%215109&cid=3705E349C336415F)
+Please manually download all datasets from [ped1.tar.gz, ped2.tar.gz, avenue.tar.gz and shanghaitech.tar.gz](http://101.32.75.151:8181/dataset/)
 and tar each tar.gz file, and move them in to **Data** folder.
 
 You can also download data from BaiduYun(https://pan.baidu.com/s/1j0TEt-2Dw3kcfdX-LCF0YQ) i9b3 
 
 ## 3. Testing on saved models
 * Download the trained models (There are the pretrained FlowNet and the trained models of the papers, such as ped1, ped2 and avenue).
-Please manually download pretrained models from [pretrains.tar.gz, avenue, ped1, ped2, flownet](https://onedrive.live.com/?authkey=%21AMqh2fTSemfrokE&id=3705E349C336415F%215109&cid=3705E349C336415F)
+Please manually download pretrained models from [pretrains.tar.gz, avenue, ped1, ped2, flownet](http://101.32.75.151:8181/dataset/)
 and tar -xvf pretrains.tar.gz, and move pretrains into **Codes/checkpoints** folder. **[ShanghaiTech pre-trained models](https://onedrive.live.com/?authkey=%21AMlRwbaoQ0sAgqU&id=303FB25922AAD438%217383&cid=303FB25922AAD438)**
 
 * Running the sript (as ped2 and avenue datasets for examples) and cd into **Codes** folder at first.
