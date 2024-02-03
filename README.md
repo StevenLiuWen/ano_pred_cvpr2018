@@ -1,12 +1,12 @@
 # Future Frame Prediction for Anomaly Detection -- A New Baseline
-This repo is the official open source of [Future Frame Prediction for Anomaly Detection -- A New Baseline, CVPR 2018](https://arxiv.org/pdf/1712.09867.pdf) by Wen Liu, Weixin Luo, Dongze Lian and Shenghua Gao. 
+This repo is the official open-source of [Future Frame Prediction for Anomaly Detection -- A New Baseline, CVPR 2018](https://arxiv.org/pdf/1712.09867.pdf) by Wen Liu, Weixin Luo, Dongze Lian and Shenghua Gao. 
 A **demo** is shown in *https://www.youtube.com/watch?v=M--wv-Y_h0A*. 
 ![scalars_tensorboard](assets/architecture.JPG)
 
-It is implemented in tensorflow. Please follow the instructions to run the code.
+It is implemented in TensorFlow. Please follow the instructions to run the code.
 
 ## 1. Installation (Anaconda with python3.6 installation is recommended)
-* Install 3rd-package dependencies of python (listed in requirements.txt)
+* Install 3rd-package dependencies of Python (listed in requirements.txt)
 ```
 numpy==1.14.1
 scipy==1.0.0
@@ -31,14 +31,14 @@ Cudnn 6.0
 Ubuntu 14.04 or 16.04, Centos 7 and other distributions.
 ```
 ## 2. Download datasets
-Please manually download all datasets from [ped1.tar.gz, ped2.tar.gz, avenue.tar.gz and shanghaitech.tar.gz](http://101.32.75.151:8181/dataset/)
-and tar each tar.gz file, and move them in to **Data** folder.
+Please manually download all datasets from [ped1.tar.gz, ped2.tar.gz, avenue.tar.gz and shanghaitech.tar.gz](https://1drv.ms/f/s!AjjUqiJZsj8whLt1Y8O-sOW8gWs1-A?e=fJGmAk)
+and tar each tar.gz file, and move them into **Data** folder.
 
 You can also download data from BaiduYun(https://pan.baidu.com/s/1j0TEt-2Dw3kcfdX-LCF0YQ) i9b3 
 
 ## 3. Testing on saved models
 * Download the trained models (There are the pretrained FlowNet and the trained models of the papers, such as ped1, ped2 and avenue).
-Please manually download pretrained models from [pretrains.tar.gz, avenue, ped1, ped2, flownet](http://101.32.75.151:8181/dataset/)
+Please manually download pretrained models of avenue, ped1, ped2, flownet from [pretrains.tar.gz](https://1drv.ms/f/s!AjjUqiJZsj8whLt1Y8O-sOW8gWs1-A?e=fJGmAk)
 and tar -xvf pretrains.tar.gz, and move pretrains into **Codes/checkpoints** folder. **[ShanghaiTech pre-trained models](https://onedrive.live.com/?authkey=%21AMlRwbaoQ0sAgqU&id=303FB25922AAD438%217383&cid=303FB25922AAD438)**
 
 * Running the sript (as ped2 and avenue datasets for examples) and cd into **Codes** folder at first.
@@ -58,7 +58,7 @@ python inference.py  --dataset  avenue    \
 
 
 ## 4. Training from scratch (here we use ped2 and avenue datasets for examples)
-* Download the pretrained FlowNet at first and see above mentioned step 3.1 
+* Download the pretrained FlowNet at first and see above-mentioned step 3.1 
 * Set hyper-parameters
 The default hyper-parameters, such as $\lambda_{init}$, $\lambda_{gd}$, $\lambda_{op}$, $\lambda_{adv}$ and the learning rate of G, as well as D, are all initialized in **training_hyper_params/hyper_params.ini**. 
 * Running script (as ped2 or avenue for instances) and cd into **Codes** folder at first.
@@ -70,7 +70,7 @@ python train.py  --dataset  ped2    \
                  --iters    80000
 ```
 * Model selection while training
-In order to do model selection, a popular way is to testing the saved models after a number of iterations or epochs (Since there are no validation set provided on above all datasets, and in order to compare the performance with other methods, we just choose the best model on testing set). Here, we can use another GPU to listen the **snapshot_dir** folder. When a new model.cpkt.xxx has arrived, then load the model and test. Finnaly, we choose the best model. Following is the script.
+To do model selection, a popular way is to test the saved models after a number of iterations or epochs (Since there is no validation set provided on above all datasets, and to compare the performance with other methods, we just choose the best model on testing set). Here, we can use another GPU to listen to the **snapshot_dir** folder. When a new model.cpkt.xxx has arrived, then load the model and test. Finally, we choose the best model. Following is the script.
 ```shell
 python inference.py  --dataset  ped2    \
                      --test_folder  ../Data/ped2/testing/frames       \
@@ -109,11 +109,11 @@ optional arguments:
 ```shell
 tensorboard    --logdir=./summary    --port=10086
 ```
-Open the browser and type **https://ip:10086**. Following is the screen shot of avenue on tensorboard.
+Open the browser and type **https://ip:10086**. Following is the screenshot of Avenue on Tensorboard.
 ![scalars_tensorboard](assets/scalars.JPG)
 
 ![images_tensorboard](assets/images.JPG)
-Since the models are trained in BGR image color channels, the visualized images in tensorboard look different from RGB channels.
+Since the models are trained in BGR image color channels, the visualized images in Tensorboard look different from RGB channels.
 In the demo, we change the output images from BGR to RGB.
 
 ## Notes
